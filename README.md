@@ -9,7 +9,8 @@ It archives this by editing the HOTBAR.DAT config file, changing the last 2 emot
 
 # How to use.
 
-Download and extract the latest version of this utility from: https://github.com/DJFPaul/FFXIV-Emote-Tool/releases <br>
+Download and extract the latest version of this utility from Releases. <br>
+https://github.com/DJFPaul/FFXIV-Emote-Tool/releases <br>
 <br>
 
 Before launching it, check / prepare your hotbar 8. <br>
