@@ -4,7 +4,7 @@
 
 
 This utility provides an easy option to add the doze / sit emote to your hotbar, without Cheat Engine or Mods / Launchers. <br>
-This is done by editing the HOTBAR.DAT config file, changing the last 2 emotes of the shared hotbar 8 to the respective emotes. <br>
+This is done by hex editing the HOTBAR.DAT config file, changing the last 2 slots of the shared hotbar 8 to the respective emotes. <br>
 This does not break any other hotbar slots and can be used on an already configured hotbar. <br>
 (It does override the last 2 slots on Hotbar 8, anything already there will be replaced.) <br>
 <br>
