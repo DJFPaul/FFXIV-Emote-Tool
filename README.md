@@ -30,7 +30,7 @@ Now pick "Hotbar Settings", switch to the "Sharing" tab at the top, and enable "
 <br>
 Next, you can log out of the character. <br>
 Launch the FFXIV Emote Tool. <br>
-You will be greeted with quick info screen. <br>
+You will be greeted with a quick info screen. <br>
 
 ![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/09db257c-80a8-473b-b972-46813acede42)
 <br>
