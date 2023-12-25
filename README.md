@@ -8,6 +8,8 @@ It archives this by editing the HOTBAR.DAT config file, changing the last 2 emot
 This does not break any other hotbar slots and can be used on an already configured hotbar. <br>
 (It does override the last 2 slots on Hotbar 8, anything already there will be replaced.) <br>
 <br>
+Usage of this utility is at your own risk.<br>
+<br>
 
 # How to use.
 
