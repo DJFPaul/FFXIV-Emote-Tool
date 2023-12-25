@@ -68,7 +68,6 @@ You may need to enable hotbar 8 in your HUD Layout first. <br>
 The emotes can be dragged to any other hotbar slot. <br>
 <br>
 # Disclaimer
-I'd like to remind that this is editing the game config in not intended ways. <br>
-While this utility is (ab)using native game features without injecting code into the game. <br>
-Usage of this utility this remains at your own risk. <br>
-It is probably not wise, to use these in any crowded area. <br>
+I'd like to remind that this is editing the game config in unintended ways. <br>
+Usage of this utility is at your own risk. <br>
+It is probably wise to not use these emotes in any crowded area. <br>
