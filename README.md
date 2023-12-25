@@ -57,8 +57,10 @@ Once done, the patch button will enable it self. <br>
 
 ![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/41dea9c2-2d43-425a-94db-be8636d421fe)
 <br>
-Hit PATCH and after confirming another short warning message, the utility will edit the hotbar file. <br>
 <br>
+**BEFORE CONTINUING: BACKUP YOUR ORIGINAL HOTBAR.DAT!!!**<br>
+<br>
+Hit PATCH and after confirming another short warning message, the utility will edit the hotbar file. <br>
 When this process completed without error, you can now login to your char, and take a look at your Hotbar 8. <br>
 This now should have the 2 hiden emotes on it. <br>
 You may need to enable hotbar 8 in your HUD Layout first. <br>
