@@ -40,7 +40,7 @@ Hit the OPEN button and it should automatically start you at the FFXIV config di
 ![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/42cc7052-cfd3-456c-aa5d-c07f8815100d)
 <br>
 Shoul it not send you to the config directory, you can normally find it at at the following path: <br>
- `C:\Users\<username>\Documents\My Games\FINAL FANTASY XIV - A Realm Reborn` <br>
+ `C:\Users\%username%\Documents\My Games\FINAL FANTASY XIV - A Realm Reborn` <br>
 <br>
 Next you will need to pick the correct folder for the char you want to add the emotes too. <br>
 The save location will contain folders with the following pattern <br>
