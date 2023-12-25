@@ -18,11 +18,11 @@ https://github.com/DJFPaul/FFXIV-Emote-Tool/releases <br>
 Before launching it, check / prepare your hotbar 8. <br>
 <br>
 To do this, log into the character you want to add the emotes to. <br>
-Open the main menu, and pick Character Configuration. <br>
+Open the main menu, and pick "Character Configuration". <br>
 
 ![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/53e1df59-2848-431b-849b-3354d0a30b04)
 <br>
-Now pick Hotbar Settings, switch to the "Sharing" tab at the top, and enable Hotbar 8, if not already enabled. <br>
+Now pick "Hotbar Settings", switch to the "Sharing" tab at the top, and enable "Hotbar 8", if not already enabled. <br>
 
 ![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/b5020429-0e0f-46a8-a5c0-2f2cb5deb309)
 <br>
@@ -42,8 +42,8 @@ Hit the OPEN button and it should automatically start you at the FFXIV config di
 Shoul it not send you to the config directory, you can normally find it at at the following path: <br>
  `C:\Users\<username>\Documents\My Games\FINAL FANTASY XIV - A Realm Reborn` <br>
 <br>
-Next you will need to pipck the correct folder for the char you want to add the emotes too. <br>
-The save loation will contain folders with the following pattern <br>
+Next you will need to pick the correct folder for the char you want to add the emotes too. <br>
+The save location will contain folders with the following pattern <br>
 
 ![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/4aca036e-0076-4e7f-8e65-ae7b1db60c3f)
 <br>
@@ -60,10 +60,10 @@ Hit PATCH and after confirming another short warning message, the utility will e
 When this process completed without error, you can now login to your char, and take a look at your Hotbar 8. <br>
 This now should have the 2 hiden emotes on it. <br>
 You may need to enable hotbar 8 in your HUD Layout first. <br>
-The emotes are draggable to any other hotbar. <br>
+The emotes can be dragged to any other hotbar slot. <br>
 <br>
 # Disclaimer
-I'd like to remind that this is editing the game config in not intendet ways. <br>
+I'd like to remind that this is editing the game config in not intended ways. <br>
 While this utility is (ab)using native game features without injecting code into the game. <br>
 Usage of this utility this remains at your own risk. <br>
 It is probably not wise, to use these in any crowded area. <br>
