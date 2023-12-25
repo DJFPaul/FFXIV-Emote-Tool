@@ -61,5 +61,6 @@ The emotes are draggable to any other hotbar. <br>
 <br>
 # Disclaimer
 I'd like to remind that this is editing the game config in not intendet ways. <br>
-This utility is using native game features and not injecting code into the game, but usage of this utility this is at your own risk. <br>
+While this utility is (ab)using native game features without injecting code into the game. <br>
+Usage of this utility this remains at your own risk. <br>
 It is probably not wise, to use these in any crowded area. <br>
