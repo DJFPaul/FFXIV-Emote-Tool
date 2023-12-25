@@ -1,0 +1,24 @@
+C:\Users\MartinW10\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\bin\Debug\FFXIV Emote Tool.exe
+C:\Users\MartinW10\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\bin\Debug\FFXIV Emote Tool.pdb
+C:\Users\MartinW10\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\bin\Debug\FFXIV Emote Tool.xml
+C:\Users\MartinW10\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV Emote Tool.vbprojAssemblyReference.cache
+C:\Users\MartinW10\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV_Emote_Tool.Form1.resources
+C:\Users\MartinW10\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV_Emote_Tool.Resources.resources
+C:\Users\MartinW10\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV Emote Tool.vbproj.GenerateResource.cache
+C:\Users\MartinW10\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV Emote Tool.vbproj.CoreCompileInputs.cache
+C:\Users\MartinW10\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV Emote Tool.exe
+C:\Users\MartinW10\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV Emote Tool.xml
+C:\Users\MartinW10\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV Emote Tool.pdb
+C:\Users\MartinW10\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\bin\Debug\FFXIV Emote Tool.exe.config
+C:\Users\Martin\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\bin\Debug\FFXIV Emote Tool.exe.config
+C:\Users\Martin\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\bin\Debug\FFXIV Emote Tool.exe
+C:\Users\Martin\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\bin\Debug\FFXIV Emote Tool.pdb
+C:\Users\Martin\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\bin\Debug\FFXIV Emote Tool.xml
+C:\Users\Martin\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV Emote Tool.vbproj.AssemblyReference.cache
+C:\Users\Martin\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV_Emote_Tool.Form1.resources
+C:\Users\Martin\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV_Emote_Tool.Resources.resources
+C:\Users\Martin\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV Emote Tool.vbproj.GenerateResource.cache
+C:\Users\Martin\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV Emote Tool.vbproj.CoreCompileInputs.cache
+C:\Users\Martin\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV Emote Tool.exe
+C:\Users\Martin\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV Emote Tool.xml
+C:\Users\Martin\source\repos\FFXIV Emote Tool\FFXIV Emote Tool\obj\Debug\FFXIV Emote Tool.pdb
