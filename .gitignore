@@ -1,7 +1,5 @@
 .vs/
 *.suo
-FFXIV Emote Tool/bin/Release/
-FFXIV Emote Tool/bin/Debug/
-FFXIV Emote Tool/obj/Release/
-FFXIV Emote Tool/obj/Debug/
-
+*.user
+FFXIV Emote Tool/bin/
+FFXIV Emote Tool/obj/
