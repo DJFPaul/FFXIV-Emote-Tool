@@ -4,7 +4,7 @@
 
 
 This utility provides an easy option to add the doze / sit emote to your hotbar, without Cheat Engine or Mods / Launchers. <br>
-This is done by editing the HOTBAR.DAT config file, changing the last 2 emotes of the shared hotbar 8 to the respective emotes. <br>
+This is done by hex editing the HOTBAR.DAT config file, changing the last 2 slots of the shared hotbar 8 to the respective emotes. <br>
 This does not break any other hotbar slots and can be used on an already configured hotbar. <br>
 (It does override the last 2 slots on Hotbar 8, anything already there will be replaced.) <br>
 <br>
@@ -30,11 +30,11 @@ Now pick "Hotbar Settings", switch to the "Sharing" tab at the top, and enable "
 <br>
 Next, you can log out of the character. <br>
 Launch the FFXIV Emote Tool. <br>
-You will be greeted with quick info screen. <br>
+You will be greeted with a quick info screen. <br>
 
 ![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/09db257c-80a8-473b-b972-46813acede42)
 <br>
-After confirming the dialogue, you will be greeted with the main utility. <br>
+After confirming the dialogue, the main utility will open. <br>
 <br>
 You will now need to specify which HOTBAR.DAT to edit. <br>
 Hit the OPEN button and it should automatically start you at the FFXIV config directory. <br>
