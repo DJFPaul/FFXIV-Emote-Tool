@@ -1,6 +1,6 @@
 # FFXIV Emote Tool
 
-![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/b322c0d3-eeda-4321-8218-67ab218cd4cb)
+![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/7afb0d0c-50e6-4cdb-a892-234e6b3355bb)
 
 
 This utility provides an easy option to add the doze / sit emote to your hotbar, without Cheat Engine or Mods / Launchers. <br>
@@ -32,7 +32,7 @@ Next, you can log out of the character. <br>
 Launch the FFXIV Emote Tool. <br>
 You will be greeted with a quick info screen. <br>
 
-![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/0b3545aa-fa3f-4b8e-976f-082af54f62e2)
+![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/beb6f92b-4e22-4a4e-a13a-a3b3d4f814b9)
 <br>
 After confirming the dialogue, the main utility will open. <br>
 <br>
