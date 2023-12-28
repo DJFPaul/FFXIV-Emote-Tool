@@ -2,6 +2,8 @@
 Public Class EmoteTool
     Public patchenabled As Boolean = False
 
+
+
     'This section is for allowing the form to be dragged by the mouse.
     Private CurrentPosition As New System.Drawing.Point
     Private MouseButton As System.Windows.Forms.MouseButtons = Nothing
@@ -31,10 +33,15 @@ Public Class EmoteTool
     'Form Load code to show initial info message.
     'Additionally it checks if it can automatically detect the FFXIV Config folder, and preconfigures it as a path.
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        MsgBox("This Utility will modify HOTBAR.DAT to add 2 hidden emotes." & vbNewLine & vbNewLine & "Usage of this utility is at your own risk." & vbNewLine & vbNewLine & "- Make sure your hotbar 8 is set to shared." & vbNewLine & "- Log out of the character the HOTBAR.DAT belongs to.", MsgBoxStyle.Information)
+        XIVDialogue.Label1.Text = "This Utility will modify HOTBAR.DAT to add 2 hidden emotes." & vbNewLine & vbNewLine & "Usage of this utility is at your own risk." & vbNewLine & vbNewLine & "- Make sure your hotbar 8 is set to shared." & vbNewLine & "- Log out of the character the HOTBAR.DAT belongs to."
+        XIVDialogue.YesNoMode = False
+        XIVDialogue.ShowDialog()
+
         If My.Computer.FileSystem.DirectoryExists(My.Computer.FileSystem.SpecialDirectories.MyDocuments & "\My Games\FINAL FANTASY XIV - A Realm Reborn") Then
             OpenFileDialog1.InitialDirectory = My.Computer.FileSystem.SpecialDirectories.MyDocuments & "\My Games\FINAL FANTASY XIV - A Realm Reborn"
         End If
+
+
     End Sub
 
 
@@ -75,7 +82,7 @@ Public Class EmoteTool
             If Result = DialogResult.Yes Then
                 Try
                     'Create autobackup.
-                    My.Computer.FileSystem.CopyFile(OpenFileDialog1.FileName, OpenFileDialog1.FileName.Replace("HOTBAR.DAT", "HOTBAR Backup " & My.Computer.Clock.LocalTime.Date & ".DAT"))
+                    My.Computer.FileSystem.CopyFile(OpenFileDialog1.FileName, OpenFileDialog1.FileName.Replace("HOTBAR.DAT", "HOTBAR Backup " & My.Computer.Clock.LocalTime.Date & " - " & My.Computer.Clock.LocalTime.ToLongTimeString.Replace(":", ".") & ".DAT"))
 
                     'This HEX edits the HOTBAR.DAT while keeping all other data intact.
                     Dim fs As New FileStream(OpenFileDialog1.FileName, FileMode.Open, FileAccess.ReadWrite)
@@ -86,7 +93,7 @@ Public Class EmoteTool
                     Next
                     fs.Close()
                     fs.Dispose()
-                    MsgBox("HOTBAR.DAT has been edited." & vbNewLine & vbNewLine & "You can now log in to your character." & vbNewLine & "The emotes should be on menu 8 slot 11 and 12." & vbNewLine & vbNewLine & "An automatic backup was created at." & vbNewLine & OpenFileDialog1.FileName.Replace("HOTBAR.DAT", "HOTBAR Backup " & My.Computer.Clock.LocalTime.Date & ".DAT"), MsgBoxStyle.Information)
+                    MsgBox("HOTBAR.DAT has been edited." & vbNewLine & vbNewLine & "You can now log in to your character." & vbNewLine & "The emotes should be on menu 8 slot 11 and 12." & vbNewLine & vbNewLine & "An automatic backup was created at." & vbNewLine & OpenFileDialog1.FileName.Replace("HOTBAR.DAT", "HOTBAR Backup " & My.Computer.Clock.LocalTime.Date & " - " & My.Computer.Clock.LocalTime.ToLongTimeString.Replace(":", ".") & ".DAT"), MsgBoxStyle.Information)
                 Catch Ex As Exception
                     MsgBox("An error occured: " & Ex.Message, MsgBoxStyle.Critical)
                 Finally
@@ -103,13 +110,6 @@ Public Class EmoteTool
         End If
 
     End Sub
-
-
-    'This prints a path hint when the blue ? is pressed.
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-        MsgBox("You can find the HOTBAR.DAT at the following example path." & vbNewLine & vbNewLine & "C:\Users\<User>\Documents\My Games\ " & vbNewLine & "FINAL FANTASY XIV - A Realm Reborn\" & vbNewLine & "FFXIV_CHR################\HOTBAR.DAT", MsgBoxStyle.Information)
-    End Sub
-
 
     'Close button.
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
@@ -159,12 +159,14 @@ Public Class EmoteTool
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
         'Confirm charfinder launch.
-        Dim Buttons As MessageBoxButtons = MessageBoxButtons.YesNo
-        Dim Result As DialogResult
-        Result = MessageBox.Show("CharFinder will try to automatically detect your character." & vbNewLine & vbNewLine & "This does not interact with the game directly." & vbNewLine & "It watches for changes made to all existing HOTBAR.DAT files." & vbNewLine & vbNewLine & "Do you want to launch CharFinder?", "Launch CharFinder?", Buttons, MessageBoxIcon.Question)
+
+        XIVDialogue.YesNoMode = True
+        XIVDialogue.Label1.Text = "CharFinder will try to automatically detect your character." & vbNewLine & vbNewLine & "This does not interact with the game directly." & vbNewLine & "It watches for changes made to all HOTBAR.DAT files." & vbNewLine & vbNewLine & "Do you want to launch CharFinder?"
+        XIVDialogue.ShowDialog()
 
         'Launch Charfinder.
-        If Result = DialogResult.Yes Then
+        If XIVDialogue.YesState = True Then
+            XIVDialogue.YesNoMode = False
 
             charfinder.Show()
             charfinder.Location = Me.Location

@@ -122,6 +122,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="XIVDialogue.Designer.vb">
+      <DependentUpon>XIVDialogue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XIVDialogue.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CharFinder.resx">
@@ -132,9 +138,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XIVDialogue.resx">
+      <DependentUpon>XIVDialogue.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +179,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FFXIVET.ico" />
+    <None Include="Resources\CharFinder.png" />
+    <None Include="Resources\YesUnlit.png" />
+    <None Include="Resources\YesLit.png" />
+    <None Include="Resources\OkUnlit.png" />
+    <None Include="Resources\OkLit.png" />
+    <None Include="Resources\NoUnlit.png" />
+    <None Include="Resources\NoLit.png" />
+    <None Include="Resources\DialogueUnlit.png" />
+    <None Include="Resources\DialogueLit.png" />
+    <None Include="Resources\DialogueBG.png" />
+    <None Include="Resources\EmoteToolBase.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

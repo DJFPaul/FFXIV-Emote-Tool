@@ -1,5 +1,29 @@
 ﻿Public Class charfinder
 
+    'This section is for allowing the form to be dragged by the mouse.
+    Private CurrentPosition As New System.Drawing.Point
+    Private MouseButton As System.Windows.Forms.MouseButtons = Nothing
+    Private Overloads Sub OnMouseDown(ByVal Sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseDown
+        MyClass.MouseButton = e.Button()
+        With MyClass.CurrentPosition
+            .X = e.X()
+            .Y = e.Y()
+        End With
+    End Sub
+    Private Overloads Sub OnMouseMove(ByVal Sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseMove
+        Select Case MouseButton
+            Case Is = Me.MouseButtons.Left
+                MyClass.Top = Me.Cursor.Position.Y() - MyClass.CurrentPosition.Y()
+                MyClass.Left = Me.Cursor.Position.X() - MyClass.CurrentPosition.X()
+            Case Is = Nothing
+                Exit Sub
+        End Select
+    End Sub
+    Private Overloads Sub OnMouseUp(ByVal Sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseUp
+        MyClass.MouseButton = Nothing
+    End Sub
+    'End of mouse movement section.
+
     Private Sub charfinder_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         InitialLoad()
     End Sub
@@ -46,12 +70,14 @@
 
                         Timer1.Stop()
                         Me.BringToFront()
-                        Dim Buttons As MessageBoxButtons = MessageBoxButtons.YesNo
-                        Dim Result As DialogResult
-                        Result = MessageBox.Show("HOTBAR.DAT change detected." & vbNewLine & vbNewLine & RichTextBox1.Lines(i) & vbNewLine & vbNewLine & "Load into Emote Tool?", "Load into Emote Tool?", Buttons, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly)
+                        XIVDialogue.YesNoMode = True
+                        XIVDialogue.Label1.Text = "HOTBAR.DAT change detected." & vbNewLine & vbNewLine & RichTextBox1.Lines(i) & vbNewLine & vbNewLine & "Load into Emote Tool?"
+                        XIVDialogue.ShowDialog()
 
                         'Load into EmoteTool and close
-                        If Result = DialogResult.Yes Then
+                        If XIVDialogue.YesState = True Then
+                            XIVDialogue.YesNoMode = False
+
                             EmoteTool.TextBox1.Text = RichTextBox1.Lines(i)
                             EmoteTool.OpenFileDialog1.FileName = RichTextBox1.Lines(i)
                             EmoteTool.patchenabled = True
@@ -78,6 +104,15 @@
         End Try
     End Function
 
+    'UI Shenanigans
+    Private Sub PictureBox3_MouseEnter(sender As Object, e As EventArgs) Handles PictureBox3.MouseEnter
+        PictureBox3.BackgroundImage = My.Resources.X_Lit
+    End Sub
+
+    Private Sub PictureBox3_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox3.MouseLeave
+        PictureBox3.BackgroundImage = My.Resources.Transparent
+    End Sub
+
     'Show EmoteTool again and bring it to the front.
     Private Sub charfinder_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         EmoteTool.Show()
@@ -86,4 +121,9 @@
         EmoteTool.Select()
         EmoteTool.Activate()
     End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Me.Close()
+    End Sub
+
 End Class

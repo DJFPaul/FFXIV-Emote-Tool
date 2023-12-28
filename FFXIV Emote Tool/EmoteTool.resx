@@ -135,6 +135,12 @@ It's certainly much safter then Cheat Engine as it edits the HOTBAR.DAT outside 
   <metadata name="ToolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>258, 17</value>
   </metadata>
+  <data name="Label1.ToolTip" xml:space="preserve">
+    <value>The HOTBAR.DAT is typically located in a FFXIV_CHR################ folder in.
+ C:\Users\%username%\Documents\My Games\FINAL FANTASY XIV - A Realm Reborn
+
+Use the CharFinder, if you do not know the correct profile folder for your Character.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
