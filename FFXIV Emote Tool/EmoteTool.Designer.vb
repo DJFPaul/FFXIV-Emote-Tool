@@ -107,16 +107,16 @@ Partial Class EmoteTool
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Cursor = System.Windows.Forms.Cursors.Help
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Gray
-        Me.Label2.Location = New System.Drawing.Point(320, 167)
+        Me.Label2.Location = New System.Drawing.Point(265, 168)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(32, 13)
+        Me.Label2.Size = New System.Drawing.Size(90, 13)
         Me.Label2.TabIndex = 8
-        Me.Label2.Text = "v1.1"
+        Me.Label2.Text = "v1.2 beta"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopRight
         Me.ToolTip1.SetToolTip(Me.Label2, resources.GetString("Label2.ToolTip"))
         Me.ToolTip2.SetToolTip(Me.Label2, "The FFXIV Emote Tool was written by F####")
         '
@@ -131,7 +131,7 @@ Partial Class EmoteTool
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Label3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DodgerBlue
         Me.Label3.Location = New System.Drawing.Point(270, 36)
@@ -139,7 +139,8 @@ Partial Class EmoteTool
         Me.Label3.Size = New System.Drawing.Size(77, 13)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "[Char finder]"
-        Me.ToolTip1.SetToolTip(Me.Label3, "Open the char finder, to assist finding the correct profile folder.")
+        Me.ToolTip1.SetToolTip(Me.Label3, "Open the char finder, to assist finding the correct profile folder." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "This does no" &
+        "t interact with the game directly.")
         '
         'ToolTip2
         '

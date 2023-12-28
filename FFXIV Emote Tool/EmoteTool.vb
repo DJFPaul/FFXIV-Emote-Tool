@@ -149,11 +149,26 @@ Public Class EmoteTool
         Label1.ForeColor = Color.DodgerBlue
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub Label3_MouseEnter(sender As Object, e As EventArgs) Handles Label3.MouseEnter
+        Label3.ForeColor = Color.DeepSkyBlue
+    End Sub
 
-        'Hide EmoteTool and show CharFinder at it's current location.
-        charfinder.Show()
-        charfinder.Location = Me.Location
-        Me.Hide()
+    Private Sub Label3_MouseLeave(sender As Object, e As EventArgs) Handles Label3.MouseLeave
+        Label3.ForeColor = Color.DodgerBlue
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+        'Confirm charfinder launch.
+        Dim Buttons As MessageBoxButtons = MessageBoxButtons.YesNo
+        Dim Result As DialogResult
+        Result = MessageBox.Show("CharFinder will try to automatically detect your character." & vbNewLine & vbNewLine & "This does not interact with the game directly." & vbNewLine & "It watches for changes made to all existing HOTBAR.DAT files." & vbNewLine & vbNewLine & "Do you want to launch CharFinder?", "Launch CharFinder?", Buttons, MessageBoxIcon.Question)
+
+        'Launch Charfinder.
+        If Result = DialogResult.Yes Then
+
+            charfinder.Show()
+            charfinder.Location = Me.Location
+            Me.Hide()
+        End If
     End Sub
 End Class
