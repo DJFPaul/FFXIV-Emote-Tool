@@ -1,6 +1,7 @@
 ﻿Public Class XIVDialogue
     Public YesNoMode As String = False
     Public YesState As Boolean = False
+    Dim InitialLocation As Point
     'This section is for allowing the form to be dragged by the mouse.
     Private CurrentPosition As New System.Drawing.Point
     Private MouseButton As System.Windows.Forms.MouseButtons = Nothing
@@ -26,6 +27,13 @@
     'End of mouse movement section.
 
     Private Sub XIVDialogue_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        If InitialLocation.IsEmpty = False Then
+            Me.Location = InitialLocation
+        Else
+            InitialLocation = Me.Location
+        End If
+
         YesState = False
         If YesNoMode = True Then
             YesBox.Show()
@@ -66,6 +74,7 @@
     End Sub
 
     Private Sub OkBox_Click(sender As Object, e As EventArgs) Handles OkBox.Click
+
         Me.Close()
     End Sub
 
