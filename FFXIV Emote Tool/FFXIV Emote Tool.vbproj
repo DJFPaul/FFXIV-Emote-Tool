@@ -169,9 +169,6 @@
     <None Include="Resources\Patch.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Base.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Transparent.png" />
   </ItemGroup>
   <ItemGroup>
@@ -180,9 +177,6 @@
   <ItemGroup>
     <Content Include="FFXIVET.ico" />
     <None Include="Resources\Loading.gif" />
-    <None Include="Resources\Surrounded indicator.gif" />
-    <None Include="Resources\ZNeT.gif" />
-    <None Include="Resources\BuZv.gif" />
     <None Include="Resources\CharFinder.png" />
     <None Include="Resources\YesUnlit.png" />
     <None Include="Resources\YesLit.png" />
@@ -190,8 +184,6 @@
     <None Include="Resources\OkLit.png" />
     <None Include="Resources\NoUnlit.png" />
     <None Include="Resources\NoLit.png" />
-    <None Include="Resources\DialogueUnlit.png" />
-    <None Include="Resources\DialogueLit.png" />
     <None Include="Resources\DialogueBG.png" />
     <None Include="Resources\EmoteToolBase.png" />
   </ItemGroup>

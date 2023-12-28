@@ -2,8 +2,6 @@
 Public Class EmoteTool
     Public patchenabled As Boolean = False
 
-
-
     'This section is for allowing the form to be dragged by the mouse.
     Private CurrentPosition As New System.Drawing.Point
     Private MouseButton As System.Windows.Forms.MouseButtons = Nothing
@@ -29,7 +27,6 @@ Public Class EmoteTool
     'End of mouse movement section.
 
 
-
     'Form Load code to show initial info message.
     'Additionally it checks if it can automatically detect the FFXIV Config folder, and preconfigures it as a path.
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -40,8 +37,6 @@ Public Class EmoteTool
         If My.Computer.FileSystem.DirectoryExists(My.Computer.FileSystem.SpecialDirectories.MyDocuments & "\My Games\FINAL FANTASY XIV - A Realm Reborn") Then
             OpenFileDialog1.InitialDirectory = My.Computer.FileSystem.SpecialDirectories.MyDocuments & "\My Games\FINAL FANTASY XIV - A Realm Reborn"
         End If
-
-
     End Sub
 
 
@@ -105,17 +100,15 @@ Public Class EmoteTool
                 Finally
                     'Disable patchbuton and false the check value.
                     patchenabled = False
-                        PictureBox1.Hide()
-                    End Try
-                End If
-            Else
-                'Button has been pressed while checkvalue is not True.
-                patchenabled = False
-                PictureBox1.Hide()
-                MsgBox("An error occured: Patchcheck returned false.", MsgBoxStyle.Critical)
+                    PictureBox1.Hide()
+                End Try
             End If
-
-
+        Else
+            'Button has been pressed while checkvalue is not True.
+            patchenabled = False
+            PictureBox1.Hide()
+            MsgBox("An error occured: Patchcheck returned false.", MsgBoxStyle.Critical)
+        End If
     End Sub
 
     'Close button.
