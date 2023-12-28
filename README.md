@@ -1,6 +1,6 @@
 # FFXIV Emote Tool
 
-![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/4ac7d3fe-fa5e-4c99-b078-9feb9149181d)
+![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/b322c0d3-eeda-4321-8218-67ab218cd4cb)
 
 
 This utility provides an easy option to add the doze / sit emote to your hotbar, without Cheat Engine or Mods / Launchers. <br>
@@ -32,14 +32,14 @@ Next, you can log out of the character. <br>
 Launch the FFXIV Emote Tool. <br>
 You will be greeted with a quick info screen. <br>
 
-![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/09db257c-80a8-473b-b972-46813acede42)
+![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/0b3545aa-fa3f-4b8e-976f-082af54f62e2)
 <br>
 After confirming the dialogue, the main utility will open. <br>
 <br>
 You will now need to specify which HOTBAR.DAT to edit. <br>
 Hit the OPEN button and it should automatically start you at the FFXIV config directory. <br>
 
-![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/42cc7052-cfd3-456c-aa5d-c07f8815100d)
+![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/3739d585-7b6a-4cd3-9dc1-1f8af1e22a99)
 <br>
 Shoul it not send you to the config directory, you can normally find it at at the following path: <br>
  `C:\Users\%username%\Documents\My Games\FINAL FANTASY XIV - A Realm Reborn` <br>
@@ -55,7 +55,7 @@ Then check the folders, and see which HOTBAR.DAT was recently edited <br>
 Now, specify the HOTBAR.DAT of the char folder that you want to add the emotes to. <br>
 Once done, the patch button will enable it self. <br>
 
-![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/41dea9c2-2d43-425a-94db-be8636d421fe)
+![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/f10cea5e-8e51-4b4c-b4e6-aae24a74c203)
 <br>
 Hit PATCH and after confirming another short warning message, the utility will edit the hotbar file. <br>
 When this process completed without error, you can now login to your char, and take a look at your Hotbar 8. <br>
