@@ -1,6 +1,6 @@
 ﻿Imports System.IO
 Public Class EmoteTool
-    Dim patchenabled As Boolean = False
+    Public patchenabled As Boolean = False
 
     'This section is for allowing the form to be dragged by the mouse.
     Private CurrentPosition As New System.Drawing.Point
@@ -150,8 +150,10 @@ Public Class EmoteTool
     End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-        Me.WindowState = WindowState.Minimized
-        charfinder.ShowDialog()
 
+        'Hide EmoteTool and show CharFinder at it's current location.
+        charfinder.Show()
+        charfinder.Location = Me.Location
+        Me.Hide()
     End Sub
 End Class

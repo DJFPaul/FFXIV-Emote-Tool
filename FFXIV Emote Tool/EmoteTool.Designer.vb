@@ -32,8 +32,8 @@ Partial Class EmoteTool
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -127,13 +127,6 @@ Partial Class EmoteTool
         Me.ToolTip1.IsBalloon = True
         Me.ToolTip1.ReshowDelay = 100
         '
-        'ToolTip2
-        '
-        Me.ToolTip2.AutoPopDelay = 4000
-        Me.ToolTip2.InitialDelay = 24000
-        Me.ToolTip2.IsBalloon = True
-        Me.ToolTip2.ReshowDelay = 100
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -147,6 +140,13 @@ Partial Class EmoteTool
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "[Char finder]"
         Me.ToolTip1.SetToolTip(Me.Label3, "Open the char finder, to assist finding the correct profile folder.")
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.AutoPopDelay = 4000
+        Me.ToolTip2.InitialDelay = 24000
+        Me.ToolTip2.IsBalloon = True
+        Me.ToolTip2.ReshowDelay = 100
         '
         'EmoteTool
         '
@@ -167,7 +167,6 @@ Partial Class EmoteTool
         Me.MaximizeBox = False
         Me.Name = "EmoteTool"
         Me.Text = "FFXIV Emote Tool"
-        Me.TopMost = True
         Me.TransparencyKey = System.Drawing.Color.Lime
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
