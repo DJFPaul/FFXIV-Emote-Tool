@@ -111,11 +111,11 @@ Partial Class Form1
         Me.Label2.Cursor = System.Windows.Forms.Cursors.Help
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Gray
-        Me.Label2.Location = New System.Drawing.Point(320, 166)
+        Me.Label2.Location = New System.Drawing.Point(320, 167)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(32, 13)
         Me.Label2.TabIndex = 8
-        Me.Label2.Text = "v1.0"
+        Me.Label2.Text = "v1.1"
         Me.ToolTip1.SetToolTip(Me.Label2, resources.GetString("Label2.ToolTip"))
         Me.ToolTip2.SetToolTip(Me.Label2, "The FFXIV Emote Tool was written by F####")
         '

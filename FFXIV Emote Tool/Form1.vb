@@ -31,7 +31,7 @@ Public Class Form1
     'Form Load code to show initial info message.
     'Additionally it checks if it can automatically detect the FFXIV Config folder, and preconfigures it as a path.
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        MsgBox("This Utility will modify HOTBAR.DAT to add 2 hidden emotes." & vbNewLine & vbNewLine & "Usage of this utility is at your own risk." & vbNewLine & vbNewLine & "- Make sure your hotbar 8 is set to shared." & vbNewLine & "- Log out of the character the HOTBAR.DAT belongs to." & vbNewLine & vbNewLine & "Please make a backup of your HOTBAR.DAT", MsgBoxStyle.Information)
+        MsgBox("This Utility will modify HOTBAR.DAT to add 2 hidden emotes." & vbNewLine & vbNewLine & "Usage of this utility is at your own risk." & vbNewLine & vbNewLine & "- Make sure your hotbar 8 is set to shared." & vbNewLine & "- Log out of the character the HOTBAR.DAT belongs to.", MsgBoxStyle.Information)
         If My.Computer.FileSystem.DirectoryExists(My.Computer.FileSystem.SpecialDirectories.MyDocuments & "\My Games\FINAL FANTASY XIV - A Realm Reborn") Then
             OpenFileDialog1.InitialDirectory = My.Computer.FileSystem.SpecialDirectories.MyDocuments & "\My Games\FINAL FANTASY XIV - A Realm Reborn"
         End If
@@ -64,7 +64,7 @@ Public Class Form1
             'Show Yes/No confirmation messagebox.
             Dim Buttons As MessageBoxButtons = MessageBoxButtons.YesNo
             Dim Result As DialogResult
-            Result = MessageBox.Show("Reminder: Useage is at your own risk!" & vbNewLine & vbNewLine & "- Make sure your hotbar 8 is set to shared." & vbNewLine & "- Log out of the character the HOTBAR.DAT belongs to." & vbNewLine & vbNewLine & "Please make a backup of your HOTBAR.DAT" & vbNewLine & vbNewLine & "Do you want to apply the patch?", "Patch HOTBAR.DAT?", Buttons, MessageBoxIcon.Exclamation)
+            Result = MessageBox.Show("Reminder: Useage is at your own risk!" & vbNewLine & vbNewLine & "- Make sure your hotbar 8 is set to shared." & vbNewLine & "- Log out of the character the HOTBAR.DAT belongs to." & vbNewLine & vbNewLine & "Do you want to apply the patch?", "Patch HOTBAR.DAT?", Buttons, MessageBoxIcon.Exclamation)
 
             'Confirmation denied, do not patch.
             If Result = DialogResult.No Then
@@ -74,6 +74,9 @@ Public Class Form1
             'Confirmation accepted, try patching HOTBAR.DAT
             If Result = DialogResult.Yes Then
                 Try
+                    'Create autobackup.
+                    My.Computer.FileSystem.CopyFile(OpenFileDialog1.FileName, OpenFileDialog1.FileName.Replace("HOTBAR.DAT", "HOTBAR Backup " & My.Computer.Clock.LocalTime.Date & ".DAT"))
+
                     'This HEX edits the HOTBAR.DAT while keeping all other data intact.
                     Dim fs As New FileStream(OpenFileDialog1.FileName, FileMode.Open, FileAccess.ReadWrite)
                     Dim strHex As String = "6931313131363B375131313131363A37"
@@ -83,7 +86,7 @@ Public Class Form1
                     Next
                     fs.Close()
                     fs.Dispose()
-                    MsgBox("HOTBAR.DAT has been edited." & vbNewLine & vbNewLine & "You can now log in to your character." & vbNewLine & "The emotes should be on menu 8 slot 11 and 12.", MsgBoxStyle.Information)
+                    MsgBox("HOTBAR.DAT has been edited." & vbNewLine & vbNewLine & "You can now log in to your character." & vbNewLine & "The emotes should be on menu 8 slot 11 and 12." & vbNewLine & vbNewLine & "An automatic backup was created at." & vbNewLine & OpenFileDialog1.FileName.Replace("HOTBAR.DAT", "HOTBAR Backup " & My.Computer.Clock.LocalTime.Date & ".DAT"), MsgBoxStyle.Information)
                 Catch Ex As Exception
                     MsgBox("An error occured: " & Ex.Message, MsgBoxStyle.Critical)
                 Finally

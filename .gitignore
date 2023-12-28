@@ -1,5 +1,5 @@
 .vs/
 *.suo
 *.user
-FFXIV Emote Tool/bin/
-FFXIV Emote Tool/obj/
+*/bin/
+*/obj/
