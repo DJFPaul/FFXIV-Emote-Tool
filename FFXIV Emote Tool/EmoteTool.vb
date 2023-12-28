@@ -68,18 +68,21 @@ Public Class EmoteTool
         'Check if patchbutton is unlocked.
         If patchenabled = True Then
 
-            'Show Yes/No confirmation messagebox.
-            Dim Buttons As MessageBoxButtons = MessageBoxButtons.YesNo
-            Dim Result As DialogResult
-            Result = MessageBox.Show("Reminder: Useage is at your own risk!" & vbNewLine & vbNewLine & "- Make sure your hotbar 8 is set to shared." & vbNewLine & "- Log out of the character the HOTBAR.DAT belongs to." & vbNewLine & vbNewLine & "Do you want to apply the patch?", "Patch HOTBAR.DAT?", Buttons, MessageBoxIcon.Exclamation)
+            'Show Yes/No confirmation dialogue
+            XIVDialogue.YesNoMode = True
+            XIVDialogue.Label1.Text = "Reminder: Useage is at your own risk!" & vbNewLine & vbNewLine & "- Make sure your hotbar 8 is set to shared." & vbNewLine & "- Log out of the character the HOTBAR.DAT belongs to." & vbNewLine & vbNewLine & "Do you want to apply the patch?"
+            XIVDialogue.ShowDialog()
+
+            'Launch Charfinder.
 
             'Confirmation denied, do not patch.
-            If Result = DialogResult.No Then
-                MsgBox("Patching has been aborted.", MsgBoxStyle.Exclamation)
+            If XIVDialogue.YesState = False Then
+                XIVDialogue.Label1.Text = "Patch was not applied."
+                XIVDialogue.ShowDialog()
             End If
 
             'Confirmation accepted, try patching HOTBAR.DAT
-            If Result = DialogResult.Yes Then
+            If XIVDialogue.YesState = True Then
                 Try
                     'Create autobackup.
                     My.Computer.FileSystem.CopyFile(OpenFileDialog1.FileName, OpenFileDialog1.FileName.Replace("HOTBAR.DAT", "HOTBAR Backup " & My.Computer.Clock.LocalTime.Date & " - " & My.Computer.Clock.LocalTime.ToLongTimeString.Replace(":", ".") & ".DAT"))
@@ -93,21 +96,27 @@ Public Class EmoteTool
                     Next
                     fs.Close()
                     fs.Dispose()
-                    MsgBox("HOTBAR.DAT has been edited." & vbNewLine & vbNewLine & "You can now log in to your character." & vbNewLine & "The emotes should be on menu 8 slot 11 and 12." & vbNewLine & vbNewLine & "An automatic backup was created at." & vbNewLine & OpenFileDialog1.FileName.Replace("HOTBAR.DAT", "HOTBAR Backup " & My.Computer.Clock.LocalTime.Date & " - " & My.Computer.Clock.LocalTime.ToLongTimeString.Replace(":", ".") & ".DAT"), MsgBoxStyle.Information)
+
+                    'MsgBox("HOTBAR.DAT has been edited." & vbNewLine & vbNewLine & "You can now log in to your character." & vbNewLine & "The emotes should be on menu 8 slot 11 and 12." & vbNewLine & vbNewLine & "An automatic backup was created at." & vbNewLine & OpenFileDialog1.FileName.Replace("HOTBAR.DAT", "HOTBAR Backup " & My.Computer.Clock.LocalTime.Date & " - " & My.Computer.Clock.LocalTime.ToLongTimeString.Replace(":", ".") & ".DAT"), MsgBoxStyle.Information)
+
+                    XIVDialogue.Label1.Text = "HOTBAR.DAT has been edited." & vbNewLine & vbNewLine & "You can now log in to your character." & vbNewLine & "The emotes should be on menu 8 slot 11 and 12." & vbNewLine & vbNewLine & "An automatic backup was created as." & vbNewLine & "HOTBAR Backup " & My.Computer.Clock.LocalTime.Date & " - " & My.Computer.Clock.LocalTime.ToLongTimeString.Replace(":", ".") & ".DAT"
+                    XIVDialogue.ShowDialog()
+
                 Catch Ex As Exception
                     MsgBox("An error occured: " & Ex.Message, MsgBoxStyle.Critical)
                 Finally
                     'Disable patchbuton and false the check value.
                     patchenabled = False
-                    PictureBox1.Hide()
-                End Try
+                        PictureBox1.Hide()
+                    End Try
+                End If
+            Else
+                'Button has been pressed while checkvalue is not True.
+                patchenabled = False
+                PictureBox1.Hide()
+                MsgBox("An error occured: Patchcheck returned false.", MsgBoxStyle.Critical)
             End If
-        Else
-            'Button has been pressed while checkvalue is not True.
-            patchenabled = False
-            PictureBox1.Hide()
-            MsgBox("An error occured: Patchcheck returned false.", MsgBoxStyle.Critical)
-        End If
+
 
     End Sub
 

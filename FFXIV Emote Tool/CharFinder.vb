@@ -72,6 +72,7 @@
                         Me.BringToFront()
                         XIVDialogue.YesNoMode = True
                         XIVDialogue.Label1.Text = "HOTBAR.DAT change detected." & vbNewLine & vbNewLine & RichTextBox1.Lines(i) & vbNewLine & vbNewLine & "Load into Emote Tool?"
+                        XIVDialogue.TrueCenter = True
                         XIVDialogue.ShowDialog()
 
                         'Load into EmoteTool and close

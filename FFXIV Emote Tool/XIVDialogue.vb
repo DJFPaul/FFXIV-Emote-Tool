@@ -1,6 +1,7 @@
 ﻿Public Class XIVDialogue
     Public YesNoMode As String = False
     Public YesState As Boolean = False
+    Public TrueCenter As Boolean = False
     Dim InitialLocation As Point
     'This section is for allowing the form to be dragged by the mouse.
     Private CurrentPosition As New System.Drawing.Point
@@ -28,13 +29,17 @@
 
     Private Sub XIVDialogue_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        'On first launch, log position and call position on each reoccuring launch to stay centered on main screen.
         If InitialLocation.IsEmpty = False Then
-            Me.Location = InitialLocation
+            If TrueCenter = True Then
+                Me.Location = InitialLocation
+                TrueCenter = False
+            End If
         Else
             InitialLocation = Me.Location
         End If
 
-        YesState = False
+        'Configure buttons depending on active mode.
         If YesNoMode = True Then
             YesBox.Show()
             NoBox.Show()
@@ -44,6 +49,8 @@
             NoBox.Hide()
             OkBox.Show()
         End If
+        YesState = False
+        YesNoMode = False
     End Sub
 
 
@@ -73,13 +80,10 @@
         NoBox.BackgroundImage = My.Resources.NoUnlit
     End Sub
 
+
+    'Dialogue buttons
     Private Sub OkBox_Click(sender As Object, e As EventArgs) Handles OkBox.Click
-
         Me.Close()
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
     End Sub
 
     Private Sub YesBox_Click(sender As Object, e As EventArgs) Handles YesBox.Click
@@ -90,5 +94,9 @@
     Private Sub NoBox_Click(sender As Object, e As EventArgs) Handles NoBox.Click
         YesState = False
         Me.Close()
+    End Sub
+
+    Private Sub XIVDialogue_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        YesNoMode = False
     End Sub
 End Class
