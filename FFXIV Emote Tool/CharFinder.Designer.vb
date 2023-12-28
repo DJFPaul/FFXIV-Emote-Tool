@@ -29,12 +29,14 @@ Partial Class charfinder
         Me.RichTextBox3 = New System.Windows.Forms.RichTextBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(118, 15)
+        Me.RichTextBox1.Location = New System.Drawing.Point(112, 126)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ReadOnly = True
         Me.RichTextBox1.Size = New System.Drawing.Size(189, 20)
@@ -45,7 +47,7 @@ Partial Class charfinder
         '
         'RichTextBox2
         '
-        Me.RichTextBox2.Location = New System.Drawing.Point(118, 25)
+        Me.RichTextBox2.Location = New System.Drawing.Point(112, 136)
         Me.RichTextBox2.Name = "RichTextBox2"
         Me.RichTextBox2.ReadOnly = True
         Me.RichTextBox2.Size = New System.Drawing.Size(189, 20)
@@ -55,7 +57,7 @@ Partial Class charfinder
         '
         'RichTextBox3
         '
-        Me.RichTextBox3.Location = New System.Drawing.Point(118, 34)
+        Me.RichTextBox3.Location = New System.Drawing.Point(112, 145)
         Me.RichTextBox3.Name = "RichTextBox3"
         Me.RichTextBox3.ReadOnly = True
         Me.RichTextBox3.Size = New System.Drawing.Size(189, 20)
@@ -79,12 +81,25 @@ Partial Class charfinder
         Me.PictureBox3.TabIndex = 7
         Me.PictureBox3.TabStop = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Image = Global.FFXIV_Emote_Tool.My.Resources.Resources.Loading
+        Me.PictureBox1.Location = New System.Drawing.Point(325, 43)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
+        '
         'charfinder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.FFXIV_Emote_Tool.My.Resources.Resources.CharFinder
         Me.ClientSize = New System.Drawing.Size(398, 193)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.RichTextBox3)
         Me.Controls.Add(Me.RichTextBox2)
@@ -96,6 +111,7 @@ Partial Class charfinder
         Me.Text = "Charfinder"
         Me.TransparencyKey = System.Drawing.Color.Lime
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -104,4 +120,5 @@ Partial Class charfinder
     Friend WithEvents RichTextBox3 As RichTextBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

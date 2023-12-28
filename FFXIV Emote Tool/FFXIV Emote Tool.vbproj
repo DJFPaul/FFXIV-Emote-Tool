@@ -179,6 +179,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FFXIVET.ico" />
+    <None Include="Resources\Loading.gif" />
+    <None Include="Resources\Surrounded indicator.gif" />
+    <None Include="Resources\ZNeT.gif" />
+    <None Include="Resources\BuZv.gif" />
     <None Include="Resources\CharFinder.png" />
     <None Include="Resources\YesUnlit.png" />
     <None Include="Resources\YesLit.png" />
