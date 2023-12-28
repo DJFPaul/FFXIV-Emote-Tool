@@ -94,11 +94,17 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="CharFinder.Designer.vb">
+      <DependentUpon>CharFinder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharFinder.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="EmoteTool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmoteTool.Designer.vb">
+      <DependentUpon>EmoteTool.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -118,8 +124,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="CharFinder.resx">
+      <DependentUpon>CharFinder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmoteTool.resx">
+      <DependentUpon>EmoteTool.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Public Class Form1
+Public Class EmoteTool
     Dim patchenabled As Boolean = False
 
     'This section is for allowing the form to be dragged by the mouse.
@@ -147,5 +147,11 @@ Public Class Form1
 
     Private Sub Label1_MouseLeave(sender As Object, e As EventArgs) Handles Label1.MouseLeave
         Label1.ForeColor = Color.DodgerBlue
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+        Me.WindowState = WindowState.Minimized
+        charfinder.ShowDialog()
+
     End Sub
 End Class
