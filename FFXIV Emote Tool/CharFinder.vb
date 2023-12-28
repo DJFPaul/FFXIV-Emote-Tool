@@ -48,7 +48,7 @@
                         Me.BringToFront()
                         Dim Buttons As MessageBoxButtons = MessageBoxButtons.YesNo
                         Dim Result As DialogResult
-                        Result = MessageBox.Show("Found char at: " & RichTextBox1.Lines(i) & vbNewLine & vbNewLine & "Load into Emote Tool?", "Load to Emote Tool?", Buttons, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly)
+                        Result = MessageBox.Show("HOTBAR.DAT change detected." & vbNewLine & vbNewLine & RichTextBox1.Lines(i) & vbNewLine & vbNewLine & "Load into Emote Tool?", "Load into Emote Tool?", Buttons, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly)
 
                         'Load into EmoteTool and close
                         If Result = DialogResult.Yes Then

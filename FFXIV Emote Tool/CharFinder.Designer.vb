@@ -75,7 +75,7 @@ Partial Class charfinder
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(473, 48)
         Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Charfinder is now active." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Login to a character and move around any hotbar slot" &
+        Me.Label1.Text = "CharFinder is now active." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Login to a character and move around any hotbar slot" &
     " to autodetect." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
