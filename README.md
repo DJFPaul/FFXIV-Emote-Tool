@@ -52,10 +52,6 @@ The save location will contain folders with the following pattern <br>
 If you do not know which one is the correct one, you can login to you character and move any slot on the bar around. <br>
 Then check the folders, and see which HOTBAR.DAT was recently edited <br>
 <br>
-<br>
-**BEFORE CONTINUING: BACKUP YOUR ORIGINAL HOTBAR.DAT!!!**<br>
-<br>
-<br>
 Now, specify the HOTBAR.DAT of the char folder that you want to add the emotes to. <br>
 Once done, the patch button will enable it self. <br>
 
@@ -66,6 +62,9 @@ When this process completed without error, you can now login to your char, and t
 This now should have the 2 hiden emotes on it. <br>
 You may need to enable hotbar 8 in your HUD Layout first. <br>
 The emotes can be dragged to any other hotbar slot. <br>
+<br>
+If there is any error with your hotbar, you can restore from the automatic backup that was created. <br>
+Navigate to your character folder and you can find the backup there. <br>
 <br>
 # Disclaimer
 I'd like to remind that this is editing the game config in unintended ways. <br>
