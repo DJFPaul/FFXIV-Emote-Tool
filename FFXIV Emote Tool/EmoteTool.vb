@@ -97,8 +97,6 @@ Public Class EmoteTool
                     fs.Close()
                     fs.Dispose()
 
-                    'MsgBox("HOTBAR.DAT has been edited." & vbNewLine & vbNewLine & "You can now log in to your character." & vbNewLine & "The emotes should be on menu 8 slot 11 and 12." & vbNewLine & vbNewLine & "An automatic backup was created at." & vbNewLine & OpenFileDialog1.FileName.Replace("HOTBAR.DAT", "HOTBAR Backup " & My.Computer.Clock.LocalTime.Date & " - " & My.Computer.Clock.LocalTime.ToLongTimeString.Replace(":", ".") & ".DAT"), MsgBoxStyle.Information)
-
                     XIVDialogue.Label1.Text = "HOTBAR.DAT has been edited." & vbNewLine & vbNewLine & "You can now log in to your character." & vbNewLine & "The emotes should be on menu 8 slot 11 and 12." & vbNewLine & vbNewLine & "An automatic backup was created as." & vbNewLine & "HOTBAR Backup " & My.Computer.Clock.LocalTime.Date & " - " & My.Computer.Clock.LocalTime.ToLongTimeString.Replace(":", ".") & ".DAT"
                     XIVDialogue.ShowDialog()
 
