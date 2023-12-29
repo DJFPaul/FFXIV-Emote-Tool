@@ -56,12 +56,25 @@ The save location will contain folders with the following pattern <br>
 If you do not know which one is the correct one, you can use the CharFinder feature of the tool. <br>
 This feature helps you locate the correct HOTBAR.DAT automatically, by monitoring for file changes. <br>
 (This is done without injecting or modding anything to the game, it watches for file changes.) <br>
+<br>
+Click the CharFinder button to launch the assistant utility.<br>
+![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/c7c6bd58-3dd8-40d3-abd3-919d26c10287)
+
+<br>
+Once you can see this window, CharFinder is monitoring for changes. <br>
 
 ![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/6f76ef0e-4e84-465b-b5e2-941b07cf3357)
 <br>
+Login to the character you want to apply the patch too. <br>
+Now drag around any Item/Speel/Action on any hotbar, it does not matter which. <br>
+<br>
+Once CharFinder detected a change, it will pop up a message like this. <br>
+![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/7fbe5152-db25-47a6-9cc4-12bf6095b42f)
+<br>
+Hit "Yes" to load this characters HOTBAR.DAT into the Emote Tool. <br>
 
 ## Patching
-Once you have specified any HOTBAR.DAT of a character, the patch button will enable it self. <br>
+Once a HOTBAR.DAT has been specified, the patch button will enable it self. <br>
 <br>
 Hit PATCH and after confirming another short warning message, the utility will edit the hotbar file. <br>
 When this process completed without error, you can now login to your char, and take a look at your Hotbar 8. <br>
