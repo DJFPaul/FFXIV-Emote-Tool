@@ -11,8 +11,7 @@ This does not break any other hotbar slots and can be used on an already configu
 Usage of this utility is at your own risk.<br>
 <br>
 
-# How to use.
-
+# Preparation
 Download and extract the latest version of this utility from Releases. <br>
 https://github.com/DJFPaul/FFXIV-Emote-Tool/releases <br>
 <br>
@@ -29,19 +28,23 @@ Now pick "Hotbar Settings", switch to the "Sharing" tab at the top, and enable "
 ![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/b5020429-0e0f-46a8-a5c0-2f2cb5deb309)
 <br>
 Next, you can log out of the character. <br>
+
+# Using the tool.
 Launch the FFXIV Emote Tool. <br>
 You will be greeted with a quick info screen. <br>
 
 ![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/beb6f92b-4e22-4a4e-a13a-a3b3d4f814b9)
 <br>
 After confirming the dialogue, the main utility will open. <br>
-<br>
-You will now need to specify which HOTBAR.DAT to edit. <br>
-Hit the OPEN button and it should automatically start you at the FFXIV config directory. <br>
 
-![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/3739d585-7b6a-4cd3-9dc1-1f8af1e22a99)
+You will now need to specify which HOTBAR.DAT to edit. <br>
+
+## Manual process.
+If you know your correct character folders already, just hit the OPEN button.
+
+![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/f58380c7-7f8b-4460-a67b-d942e49eb89e)
 <br>
-Shoul it not send you to the config directory, you can normally find it at at the following path: <br>
+Shoul it not automatically send you to the config directory, you can normally find it at at the following path: <br>
  `C:\Users\%username%\Documents\My Games\FINAL FANTASY XIV - A Realm Reborn` <br>
 <br>
 Next you will need to pick the correct folder for the char you want to add the emotes too. <br>
@@ -49,22 +52,26 @@ The save location will contain folders with the following pattern <br>
 
 ![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/4aca036e-0076-4e7f-8e65-ae7b1db60c3f)
 <br>
-If you do not know which one is the correct one, you can login to you character and move any slot on the bar around. <br>
-Then check the folders, and see which HOTBAR.DAT was recently edited <br>
-<br>
-Now, specify the HOTBAR.DAT of the char folder that you want to add the emotes to. <br>
-Once done, the patch button will enable it self. <br>
+## Automatic Process
+If you do not know which one is the correct one, you can use the CharFinder feature of the tool. <br>
+This feature helps you locate the correct HOTBAR.DAT automatically, by monitoring for file changes. <br>
+(This is done without injecting or modding anything to the game, it watches for file changes.) <br>
 
-![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/f10cea5e-8e51-4b4c-b4e6-aae24a74c203)
+![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/6f76ef0e-4e84-465b-b5e2-941b07cf3357)
+<br>
+
+## Patching
+Once you have specified any HOTBAR.DAT of a character, the patch button will enable it self. <br>
 <br>
 Hit PATCH and after confirming another short warning message, the utility will edit the hotbar file. <br>
 When this process completed without error, you can now login to your char, and take a look at your Hotbar 8. <br>
 This now should have the 2 hiden emotes on it. <br>
+<br>
 You may need to enable hotbar 8 in your HUD Layout first. <br>
 The emotes can be dragged to any other hotbar slot. <br>
 <br>
 If there is any error with your hotbar, you can restore from the automatic backup that was created. <br>
-Navigate to your character folder and you can find the backup there. <br>
+Navigate to your character folder and find the timestamped backup there. <br>
 <br>
 # Disclaimer
 I'd like to remind that this is editing the game config in unintended ways. <br>
