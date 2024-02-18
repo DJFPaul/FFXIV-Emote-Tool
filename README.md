@@ -83,6 +83,8 @@ This now should have the 2 hiden emotes on it. <br>
 You may need to enable hotbar 8 in your HUD Layout first. <br>
 The emotes can be dragged to any other hotbar slot. <br>
 <br>
+
+## Restore from Backup
 If there is any error with your hotbar, you can restore from the automatic backup that was created. <br>
 Navigate to your character folder and find the timestamped backup there. <br>
 <br>
