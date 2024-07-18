@@ -70,7 +70,7 @@ Once you can see this window, CharFinder is monitoring for changes. <br>
 ![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/6f76ef0e-4e84-465b-b5e2-941b07cf3357)
 <br>
 Login to the character you want to apply the patch too. <br>
-Now drag around any Item/Speel/Action on any hotbar, it does not matter which. <br>
+Now drag around any Item/Spell/Action on any hotbar, it does not matter which. <br>
 <br>
 Once CharFinder detected a change, it will pop up a message like this. <br>
 ![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/7fbe5152-db25-47a6-9cc4-12bf6095b42f)
