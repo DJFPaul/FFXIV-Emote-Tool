@@ -76,6 +76,7 @@ Once CharFinder detected a change, it will pop up a message like this. <br>
 ![image](https://github.com/DJFPaul/FFXIV-Emote-Tool/assets/35642602/7fbe5152-db25-47a6-9cc4-12bf6095b42f)
 <br>
 Hit "Yes" to load this characters HOTBAR.DAT into the Emote Tool. <br>
+Now log out of the character again. <br>
 
 ## Patching
 Once a HOTBAR.DAT has been specified, the patch button will enable it self. <br>
